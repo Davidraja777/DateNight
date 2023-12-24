@@ -17,10 +17,12 @@ body {
 
 h1 {
     color: black;
+    font-size: 3rem;
 }
 
 p {
     color: black;
+    font-size: 2rem;
 }
 
 .invitation {
@@ -30,7 +32,7 @@ p {
     padding: 20px;
     margin: 20px auto;
     display: inline-block;
-    max-width: 90%;
+    max-width: 100%;
 }
 
 button {
@@ -41,7 +43,7 @@ button {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 2rem;
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 5px;
@@ -51,7 +53,7 @@ button {
     position: absolute;
     display: block;
     left: 50%;
-    top: 50%;
+    top: 80%;
     transform: translate(-50%, -50%); /* Center the mug */
     width: 100px; /* Adjust size for mobile */
     height: 70px;
@@ -156,6 +158,51 @@ button {
     100% {
         bottom: 90px;
         opacity: 0;
+    }
+}
+
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 480px) {
+    .mug {
+        width: 100px;
+        height: 70px;
+    }
+
+    .handle {
+        height: 30px;
+        width: 20px;
+        border: 2px solid var(--cup);
+    }
+
+    .hot {
+        bottom: 40px;
+    }
+
+    .bubble1 {
+        left: 20px;
+        animation: bubbleA 1s linear infinite;
+    }
+    
+    .bubble2 {
+        left: 70px;
+        animation: bubbleB 2s linear infinite;
+    }
+    
+    .bubble3 {
+        left: 60px;
+        bottom: 80px;
+        animation: bubbleC 3s linear infinite;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    .invitation {
+        padding: 15px;
+        margin: 20px auto;
+        max-width: 90%;
     }
 }
 
