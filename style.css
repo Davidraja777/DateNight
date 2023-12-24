@@ -86,25 +86,25 @@ button {
 
 .hot {
     position: absolute;
-    width: 0.9em;
-    height: 1.1em;
+    width: 2em;
+    height: 2em;
     border-radius: 90%;
     background-color: #e1d7d7;
     bottom: 50px;
 }
 
 .bubble1 {
-    left: 20px;
+    left: 30px;
     animation: bubbleA 1s linear infinite;
 }
 
 .bubble2 {
-    left: 70px;
+    left: 80px;
     animation: bubbleB 2s linear infinite;
 }
 
 .bubble3 {
-    left: 60px;
+    left: 70px;
     bottom: 80px;
     animation: bubbleC 3s linear infinite;
 }
