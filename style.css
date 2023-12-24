@@ -17,12 +17,12 @@ body {
 
 h1 {
     color: black;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 p {
     color: black;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .invitation {
@@ -55,14 +55,14 @@ button {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%); /* Center the mug */
-    width: 100px; /* Adjust size for mobile */
-    height: 70px;
+    width: 120px; /* Adjust size for mobile */
+    height: 90px;
 }
 
 .handle {
     position: absolute;
-    height: 30px;
-    width: 20px;
+    height: 50px;
+    width: 40px;
     border-radius: 50% 20%;
     left: 95%;
     top: 10%;
