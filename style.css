@@ -162,8 +162,8 @@ button {
 /* Media Query for Smaller Screens */
 @media screen and (max-width: 480px) {
     .mug {
-        width: 80px;
-        height: 56px;
+        width: 150px;
+        height: 90px;
     }
 
     .handle {
@@ -200,6 +200,7 @@ button {
     .invitation {
         padding: 15px;
         margin: 10px auto;
+        max-width: 90%;
     }
 }
 
