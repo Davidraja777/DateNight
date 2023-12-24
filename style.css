@@ -1,0 +1,207 @@
+:root {
+    --background_color: #0f0f10;
+    --text-color: rgb(233, 234, 241);
+    --shade: #e4d5b2;
+    --coffee: #bd823f;
+    --cup: #f1e9d0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    color: black;
+}
+
+p {
+    color: black;
+}
+
+.invitation {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    display: inline-block;
+    max-width: 90%;
+}
+
+button {
+    background-color: #ff85a2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.mug {
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* Center the mug */
+    width: 100px; /* Adjust size for mobile */
+    height: 70px;
+}
+
+.handle {
+    position: absolute;
+    height: 30px;
+    width: 20px;
+    border-radius: 50% 20%;
+    left: 95%;
+    top: 10%;
+    z-index: -1;
+    border: 3px solid var(--cup);
+    background: transparent;
+}
+
+.cup {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 3px solid var(--cup);
+    border-radius: 0.5em 0.5em 7em 7em;
+}
+
+.flavour {
+    top: 5%;
+    background: linear-gradient(to bottom, var(--background_color) 10%, var(--shade) 30%, var(--coffee) 70%);
+}
+
+.hot {
+    position: absolute;
+    width: 0.9em;
+    height: 1.1em;
+    border-radius: 90%;
+    background-color: #e1d7d7;
+    bottom: 50px;
+}
+
+.bubble1 {
+    left: 20px;
+    animation: bubbleA 1s linear infinite;
+}
+
+.bubble2 {
+    left: 70px;
+    animation: bubbleB 2s linear infinite;
+}
+
+.bubble3 {
+    left: 60px;
+    bottom: 80px;
+    animation: bubbleC 3s linear infinite;
+}
+
+@keyframes bubbleA {
+    0% {
+        bottom: 10px;
+        opacity: 0;
+    }
+
+    50% {
+        bottom: 50px;
+        opacity: .3;
+    }
+
+    100% {
+        bottom: 80px;
+        opacity: 0;
+    }
+}
+
+@keyframes bubbleB {
+    0% {
+            bottom: 10px;
+            opacity: 0;
+        }
+    
+        50% {
+            bottom: 70px;
+            opacity: .3;
+        }
+    
+        100% {
+            bottom: 100px;
+            opacity: 0;
+        }
+}
+
+
+@keyframes bubbleC {
+    0% {
+        bottom: 0px;
+        opacity: 0;
+    }
+
+    50% {
+        bottom: 60px;
+        opacity: .3;
+    }
+
+    100% {
+        bottom: 90px;
+        opacity: 0;
+    }
+}
+
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 480px) {
+    .mug {
+        width: 80px;
+        height: 56px;
+    }
+
+    .handle {
+        height: 24px;
+        width: 16px;
+        border: 2px solid var(--cup);
+    }
+
+    .hot {
+        bottom: 40px;
+    }
+
+    .bubble1 {
+        left: 20px;
+        animation: bubbleA 1s linear infinite;
+    }
+    
+    .bubble2 {
+        left: 70px;
+        animation: bubbleB 2s linear infinite;
+    }
+    
+    .bubble3 {
+        left: 60px;
+        bottom: 80px;
+        animation: bubbleC 3s linear infinite;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .invitation {
+        padding: 15px;
+        margin: 10px auto;
+    }
+}
+
+
+
