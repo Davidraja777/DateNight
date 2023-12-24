@@ -50,6 +50,7 @@ button {
 }
 
 .mug {
+    margin-top: 50px;
     position: absolute;
     display: block;
     left: 50%;
