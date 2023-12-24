@@ -53,7 +53,7 @@ button {
     position: absolute;
     display: block;
     left: 50%;
-    transform: translate(-50%, -30%); /* Center the mug */
+    transform: translate(-50%, -70%); /* Center the mug */
     width: 140px; /* Adjust size for mobile */
     height: 110px;
 }
