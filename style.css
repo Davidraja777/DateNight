@@ -43,8 +43,8 @@ button {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 2rem;
-    margin: 4px 2px;
+    font-size: 3rem;
+    margin: 4px 4px;
     cursor: pointer;
     border-radius: 5px;
 }
@@ -53,16 +53,16 @@ button {
     position: absolute;
     display: block;
     left: 50%;
-    top: 50%;
+    top: 60%;
     transform: translate(-50%, -50%); /* Center the mug */
-    width: 120px; /* Adjust size for mobile */
-    height: 90px;
+    width: 140px; /* Adjust size for mobile */
+    height: 110px;
 }
 
 .handle {
     position: absolute;
-    height: 50px;
-    width: 40px;
+    height: 70px;
+    width: 60px;
     border-radius: 50% 20%;
     left: 95%;
     top: 10%;
