@@ -20,7 +20,7 @@ h1 {
     color: black;
     font-size: 4rem;
     font-family: 'Explora', serif;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 p {
@@ -54,6 +54,7 @@ button {
     cursor: pointer;
     border-radius: 5px;
     font-family: 'Explora', serif;
+    font-weight: bolder;
 }
 
 .mug {
